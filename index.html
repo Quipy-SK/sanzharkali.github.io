@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanzhar Kali — Computer Engineering Portfolio</title>
+  <meta name="description" content="Computer Engineering graduate portfolio: software + hardware projects, skills, and resume." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Sanzhar Kali</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#software">Software</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#skills">Skills</a>
+        <a  href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
+
+      <button class="navbtn" id="navbtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+
+   
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero__grid">
+        <div>
+          <h1 class="h1">Computer Engineering Graduate</h1>
+          <p class="lead">
+            I design and build real systems - from software tools and automation to embedded hardware and transistor level circuits.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">View Resume (PDF)</a>
+            <a class="btn" href="https://linkedin.com/in/sanzhar-kali" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="meta">
+            <span>Denver, CO</span>
+            <span class="dot">•</span>
+            <span>Open to: Entry-level / Intern</span>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="pill">Quick Snapshot</div>
+          <ul class="list">
+            <li><b>Software:</b> Python, C++, SQL, Linux, Git</li>
+            <li><b>Hardware:</b> Verilog, CMOS/VLSI, Computer Architecture</li>
+            <li><b>Tools:</b> Cadence Virtuoso, LTspice, Wireshark</li>
+          </ul>
+          <div class="small">
+            Tip: click any project to open a dedicated page with details and images.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="h2">About</h2>
+        <div class="card">
+          <p>
+           I’m a Computer Engineering graduate who enjoys building complete systems: writing the software, wiring the hardware, and dealing with the constraints that come with both.
+Most of my work sits where software and hardware meet - automation, embedded systems, and digital circuits.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: SOFTWARE -->
+    <section class="section" id="software">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Software Projects</h2>
+        </div>
+        <div class="grid" id="softwareGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: HARDWARE -->
+    <section class="section" id="hardware">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Hardware Projects</h2>
+        </div>
+        <div class="grid" id="hardwareGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="h2">Skills</h2>
+
+        <div class="skills">
+          <div class="card">
+            <h3 class="h3">Software</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">C</span>
+              <span class="chip">SQL</span>
+              <span class="chip">x86 Assembly</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Bash</span>
+              <span class="chip">Git</span>
+            </div>
+            <div class="small muted">
+  Focused on building reliable tools, automation, and systems that scale beyond demos.
+</div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Hardware & RTL</h3>
+            <div class="chips">
+              <span class="chip">Verilog</span>
+              <span class="chip">SystemVerilog</span>
+              <span class="chip">CMOS</span>
+              <span class="chip">VLSI</span>
+              <span class="chip">Digital Logic</span>
+              <span class="chip">Computer Architecture</span>
+            </div>
+            <div class="small muted">
+  Designed with correctness, timing, and physical constraints in mind.
+</div>
+
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Tools & Platforms</h3>
+            <div class="chips">
+              <span class="chip">Cadence Virtuoso</span>
+              <span class="chip">LTspice</span>
+              <span class="chip">Wireshark</span>
+              <span class="chip">Oscilloscope</span>
+              <span class="chip">Signal Generator</span>
+            </div>
+            <div class="small muted"> Comfortable debugging in real lab + simulation contexts.</div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Networking & Systems</h3>
+            <div class="chips">
+              <span class="chip">Client–Server</span>
+              <span class="chip">Packet Analysis</span>
+              <span class="chip">Structured Data Pipelines</span>
+            </div>
+            <div class="small muted"> Built around practical monitoring and automation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted">© <span id="year"></span> Sanzhar Kali</span>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
